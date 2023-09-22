@@ -12,9 +12,9 @@ class PaginaLoginModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  final formKey1 = GlobalKey<FormState>();
   final formKey2 = GlobalKey<FormState>();
   final formKey3 = GlobalKey<FormState>();
-  final formKey1 = GlobalKey<FormState>();
   // State field(s) for usuario widget.
   TextEditingController? usuarioController1;
   String? Function(BuildContext, String?)? usuarioController1Validator;
@@ -24,22 +24,22 @@ class PaginaLoginModel extends FlutterFlowModel {
   // State field(s) for DropDown widget.
   String? dropDownValue1;
   FormFieldController<String>? dropDownValueController1;
-  // State field(s) for TextField widget.
-  TextEditingController? textController3;
-  String? Function(BuildContext, String?)? textController3Validator;
-  // State field(s) for TextField widget.
-  TextEditingController? textController4;
-  late bool passwordVisibility;
-  String? Function(BuildContext, String?)? textController4Validator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue2;
-  FormFieldController<String>? dropDownValueController2;
   // State field(s) for usuario widget.
   TextEditingController? usuarioController2;
   String? Function(BuildContext, String?)? usuarioController2Validator;
   // State field(s) for senha widget.
   TextEditingController? senhaController2;
   String? Function(BuildContext, String?)? senhaController2Validator;
+  // State field(s) for DropDown widget.
+  String? dropDownValue2;
+  FormFieldController<String>? dropDownValueController2;
+  // State field(s) for TextField widget.
+  TextEditingController? textController5;
+  String? Function(BuildContext, String?)? textController5Validator;
+  // State field(s) for TextField widget.
+  TextEditingController? textController6;
+  late bool passwordVisibility;
+  String? Function(BuildContext, String?)? textController6Validator;
   // State field(s) for DropDown widget.
   String? dropDownValue3;
   FormFieldController<String>? dropDownValueController3;
@@ -54,10 +54,10 @@ class PaginaLoginModel extends FlutterFlowModel {
     unfocusNode.dispose();
     usuarioController1?.dispose();
     senhaController1?.dispose();
-    textController3?.dispose();
-    textController4?.dispose();
     usuarioController2?.dispose();
     senhaController2?.dispose();
+    textController5?.dispose();
+    textController6?.dispose();
   }
 
   /// Action blocks are added here.

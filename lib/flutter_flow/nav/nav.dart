@@ -48,7 +48,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : PaginaLoginWidget(),
+          : PaginaOcupacaoAptoWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -66,37 +66,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : PaginaLoginWidget(),
-        ),
-        FFRoute(
-          name: 'pagina_Login',
-          path: '/paginaLogin',
-          builder: (context, params) => PaginaLoginWidget(),
-        ),
-        FFRoute(
-          name: 'selecao_data_venda_setor',
-          path: '/selecaoDataVendaSetor',
-          builder: (context, params) => SelecaoDataVendaSetorWidget(),
-        ),
-        FFRoute(
-          name: 'selecao_data_venda_produtos',
-          path: '/selecaoDataVendaProdutos',
-          builder: (context, params) => SelecaoDataVendaProdutosWidget(),
-        ),
-        FFRoute(
-          name: 'selecao_data_ocupacao_apto',
-          path: '/selecaoDataOcupacaoApto',
-          builder: (context, params) => SelecaoDataOcupacaoAptoWidget(),
-        ),
-        FFRoute(
-          name: 'selecao_data_diaria_media',
-          path: '/selecaoDataDiariaMedia',
-          builder: (context, params) => SelecaoDataDiariaMediaWidget(),
-        ),
-        FFRoute(
-          name: 'pagina_diaria_media',
-          path: '/paginaDiariaMedia',
-          builder: (context, params) => PaginaDiariaMediaWidget(),
+              : PaginaOcupacaoAptoWidget(),
         ),
         FFRoute(
           name: 'pagina_ocupacao_apto',
@@ -104,29 +74,39 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => PaginaOcupacaoAptoWidget(),
         ),
         FFRoute(
+          name: 'pagina_diaria_media',
+          path: '/paginaDiariaMedia',
+          builder: (context, params) => PaginaDiariaMediaWidget(),
+        ),
+        FFRoute(
           name: 'pagina_venda_setor',
           path: '/paginaVendaSetor',
           builder: (context, params) => PaginaVendaSetorWidget(),
         ),
         FFRoute(
-          name: 'pagina_grafico_taxa',
-          path: '/paginaGraficoTaxa',
-          builder: (context, params) => PaginaGraficoTaxaWidget(),
+          name: 'selecao_data_ocupacao_apto',
+          path: '/selecaoDataOcupacaoApto',
+          builder: (context, params) => SelecaoDataOcupacaoAptoWidget(),
         ),
         FFRoute(
-          name: 'pagina_venda_produtos',
-          path: '/paginaVendaProdutos',
-          builder: (context, params) => PaginaVendaProdutosWidget(),
+          name: 'selecao_data_diaria',
+          path: '/selecaoDataDiaria',
+          builder: (context, params) => SelecaoDataDiariaWidget(),
         ),
         FFRoute(
-          name: 'selecao_dataGrafico_ocupacao',
-          path: '/selecaoDataGraficoOcupacao',
-          builder: (context, params) => SelecaoDataGraficoOcupacaoWidget(),
+          name: 'selecao_data_produtos',
+          path: '/selecaoDataProdutos',
+          builder: (context, params) => SelecaoDataProdutosWidget(),
         ),
         FFRoute(
-          name: 'selecao_dataGrafico_Taxa',
-          path: '/selecaoDataGraficoTaxa',
-          builder: (context, params) => SelecaoDataGraficoTaxaWidget(),
+          name: 'selecao_data_setor',
+          path: '/selecaoDataSetor',
+          builder: (context, params) => SelecaoDataSetorWidget(),
+        ),
+        FFRoute(
+          name: 'pagina_Login',
+          path: '/paginaLogin',
+          builder: (context, params) => PaginaLoginWidget(),
         ),
         FFRoute(
           name: 'pagina_Home',
@@ -134,9 +114,29 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => PaginaHomeWidget(),
         ),
         FFRoute(
+          name: 'pagina_grafico_taxa',
+          path: '/paginaGraficoTaxa',
+          builder: (context, params) => PaginaGraficoTaxaWidget(),
+        ),
+        FFRoute(
           name: 'pagina_grafico_ocupacao',
           path: '/paginaGraficoOcupacao',
           builder: (context, params) => PaginaGraficoOcupacaoWidget(),
+        ),
+        FFRoute(
+          name: 'pagina_venda_produtos',
+          path: '/paginaVendaProdutos',
+          builder: (context, params) => PaginaVendaProdutosWidget(),
+        ),
+        FFRoute(
+          name: 'selecao_data_ocupacao_grafico',
+          path: '/selecaoDataOcupacaoGrafico',
+          builder: (context, params) => SelecaoDataOcupacaoGraficoWidget(),
+        ),
+        FFRoute(
+          name: 'selecao_data_taxa_grafico',
+          path: '/selecaoDataTaxaGrafico',
+          builder: (context, params) => SelecaoDataTaxaGraficoWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
