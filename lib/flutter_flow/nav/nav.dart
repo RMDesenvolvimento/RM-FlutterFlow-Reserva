@@ -48,7 +48,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : PaginaOcupacaoAptoWidget(),
+          : PaginaLoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -66,7 +66,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : PaginaOcupacaoAptoWidget(),
+              : PaginaLoginWidget(),
         ),
         FFRoute(
           name: 'pagina_ocupacao_apto',

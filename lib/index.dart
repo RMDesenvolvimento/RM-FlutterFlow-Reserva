@@ -20,7 +20,7 @@ export '/pages/graficos/pagina_grafico_taxa/pagina_grafico_taxa_widget.dart'
     show PaginaGraficoTaxaWidget;
 export '/pages/graficos/pagina_grafico_ocupacao/pagina_grafico_ocupacao_widget.dart'
     show PaginaGraficoOcupacaoWidget;
-export '/pages/pagina_venda_produtos/pagina_venda_produtos_widget.dart'
+export '/pages/consultas/pagina_venda_produtos/pagina_venda_produtos_widget.dart'
     show PaginaVendaProdutosWidget;
 export '/pages/graficos/utils/selecao_data_ocupacao_grafico/selecao_data_ocupacao_grafico_widget.dart'
     show SelecaoDataOcupacaoGraficoWidget;

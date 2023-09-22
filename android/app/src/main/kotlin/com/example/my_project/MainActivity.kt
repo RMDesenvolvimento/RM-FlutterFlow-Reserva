@@ -1,4 +1,4 @@
-package rmserserva.rmonline.com.br
+package br.com.rmonline.rmreserva
 
 import io.flutter.embedding.android.FlutterActivity
 

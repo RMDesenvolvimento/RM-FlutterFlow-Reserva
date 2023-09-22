@@ -78,168 +78,229 @@ class _PaginaVendaProdutosWidgetState extends State<PaginaVendaProdutosWidget> {
                         tablet: false,
                         desktop: false,
                       ))
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 10.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tablet: false,
-                                    tabletLandscape: false,
-                                    desktop: false,
-                                  ))
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 5.0, 0.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Container(
-                                            width: 54.0,
-                                            height: 63.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                            ),
-                                            child: Align(
-                                              alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        7.0, 7.0, 7.0, 7.0),
-                                                child: FFButtonWidget(
-                                                  onPressed: () async {
-                                                    context.pushNamed(
-                                                        'selecao_data_produtos');
-                                                  },
-                                                  text: '',
-                                                  icon: Icon(
-                                                    Icons.arrow_back_ios,
-                                                    size: 15.0,
-                                                  ),
-                                                  options: FFButtonOptions(
-                                                    width: double.infinity,
-                                                    height: 50.0,
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(15.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 10.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tablet: false,
+                                      tabletLandscape: false,
+                                      desktop: false,
+                                    ))
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 5.0, 0.0, 0.0),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Container(
+                                              width: 54.0,
+                                              height: 63.0,
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
-                                                    textStyle: FlutterFlowTheme
-                                                            .of(context)
-                                                        .headlineSmall
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                        ),
-                                                    elevation: 3.0,
-                                                    borderSide: BorderSide(
-                                                      color: Colors.transparent,
-                                                      width: 0.0,
+                                              ),
+                                              child: Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.00, -1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          7.0, 7.0, 7.0, 7.0),
+                                                  child: FFButtonWidget(
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                          'selecao_data_produtos');
+                                                    },
+                                                    text: '',
+                                                    icon: Icon(
+                                                      Icons.arrow_back_ios,
+                                                      size: 15.0,
                                                     ),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            15.0),
+                                                    options: FFButtonOptions(
+                                                      width: double.infinity,
+                                                      height: 50.0,
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      iconPadding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  15.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      textStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineSmall
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                              ),
+                                                      elevation: 3.0,
+                                                      borderSide: BorderSide(
+                                                        color:
+                                                            Colors.transparent,
+                                                        width: 0.0,
+                                                      ),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              15.0),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 10.0, 15.0, 10.0),
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                'assets/images/Rm_Desenvolvimento_-_Transparente(1)_(1).png',
-                                                width: 300.0,
-                                                height: 200.0,
-                                                fit: BoxFit.cover,
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 10.0, 15.0, 10.0),
+                                              child: ClipRRect(
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                child: Image.asset(
+                                                  'assets/images/Rm_Desenvolvimento_-_Transparente(1)_(1).png',
+                                                  width: 300.0,
+                                                  height: 200.0,
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  Text(
-                                    'Sistema de Reservas - Venda Produtos',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          color: Color(0xFF056CF2),
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w600,
+                                          ],
                                         ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              width: double.infinity,
-                              height: 512.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                              ),
-                              child: SingleChildScrollView(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    Container(
-                                      width: 200.0,
-                                      height: 447.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 10.0, 10.0, 10.0),
-                                        child: ListView(
-                                          padding: EdgeInsets.zero,
-                                          shrinkWrap: true,
-                                          scrollDirection: Axis.vertical,
-                                          children: [
-                                            Column(
+                                    Text(
+                                      'Sistema de Reservas - Venda Produtos',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            color: Color(0xFF056CF2),
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  width: double.infinity,
+                                  height: 512.0,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                  ),
+                                  child: SingleChildScrollView(
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        Container(
+                                          width: double.infinity,
+                                          height: 49.0,
+                                          decoration: BoxDecoration(
+                                            color: Color(0xFF056CF2),
+                                          ),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    40.0, 0.0, 40.0, 0.0),
+                                            child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.spaceEvenly,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
-                                                Container(
-                                                  width: double.infinity,
-                                                  height: 50.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
+                                                Text(
+                                                  'Total',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
+                                                        fontSize: 18.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  'R\$ 0,00',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Readex Pro',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
+                                                        fontSize: 18.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        Container(
+                                          width: 200.0,
+                                          height: 447.0,
+                                          decoration: BoxDecoration(
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                          ),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 10.0, 10.0, 10.0),
+                                            child: ListView(
+                                              padding: EdgeInsets.zero,
+                                              shrinkWrap: true,
+                                              scrollDirection: Axis.vertical,
+                                              children: [
+                                                Card(
+                                                  clipBehavior: Clip
+                                                      .antiAliasWithSaveLayer,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  elevation: 4.0,
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
                                                   ),
                                                   child: Column(
                                                     mainAxisSize:
@@ -249,21 +310,31 @@ class _PaginaVendaProdutosWidgetState extends State<PaginaVendaProdutosWidget> {
                                                         alignment:
                                                             AlignmentDirectional(
                                                                 -1.00, -1.00),
-                                                        child: Text(
-                                                          'Produto',
-                                                          textAlign:
-                                                              TextAlign.center,
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Readex Pro',
-                                                                fontSize: 15.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                              ),
+                                                        child: Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      5.0,
+                                                                      0.0,
+                                                                      5.0,
+                                                                      0.0),
+                                                          child: Text(
+                                                            'Produto',
+                                                            textAlign: TextAlign
+                                                                .center,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  fontSize:
+                                                                      15.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
+                                                          ),
                                                         ),
                                                       ),
                                                       Row(
@@ -278,8 +349,43 @@ class _PaginaVendaProdutosWidgetState extends State<PaginaVendaProdutosWidget> {
                                                                 AlignmentDirectional(
                                                                     -1.00,
                                                                     -1.00),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5.0,
+                                                                          0.0,
+                                                                          5.0,
+                                                                          0.0),
+                                                              child: Text(
+                                                                'Quantidade: 100',
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Readex Pro',
+                                                                      color: Color(
+                                                                          0xFF056CF2),
+                                                                      fontSize:
+                                                                          12.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .bold,
+                                                                    ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        5.0,
+                                                                        0.0,
+                                                                        5.0,
+                                                                        0.0),
                                                             child: Text(
-                                                              'Quantidade: 100',
+                                                              'Total R\$ 0,00',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -296,72 +402,23 @@ class _PaginaVendaProdutosWidgetState extends State<PaginaVendaProdutosWidget> {
                                                                   ),
                                                             ),
                                                           ),
-                                                          Text(
-                                                            'Total R\$ 0,00',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  color: Color(
-                                                                      0xFF056CF2),
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                ),
-                                                          ),
                                                         ],
                                                       ),
                                                     ].divide(
                                                         SizedBox(height: 3.0)),
                                                   ),
                                                 ),
-                                              ].divide(SizedBox(height: 5.0)),
+                                              ],
                                             ),
-                                          ],
+                                          ),
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 10.0, 10.0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            'Total',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Readex Pro',
-                                                  fontSize: 15.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                          ),
-                                          Text(
-                                            'R\$ 0,00',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Readex Pro',
-                                                  color: Color(0xFF056CF2),
-                                                  fontSize: 15.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                          ),
-                                        ].divide(SizedBox(height: 5.0)),
-                                      ),
-                                    ),
-                                  ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ].divide(SizedBox(height: 10.0)),
+                            ].divide(SizedBox(height: 10.0)),
+                          ),
                         ),
                     ],
                   ),

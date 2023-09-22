@@ -435,7 +435,7 @@ class _PaginaLoginWidgetState extends State<PaginaLoginWidget> {
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       0.0,
-                                                                      24.0,
+                                                                      8.0,
                                                                       15.0),
                                                           child:
                                                               FlutterFlowDropDown<

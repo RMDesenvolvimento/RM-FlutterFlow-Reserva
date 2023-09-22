@@ -369,7 +369,7 @@ class _PaginaDiariaMediaWidgetState extends State<PaginaDiariaMediaWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  '100%',
+                                                  '80',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
